@@ -5,9 +5,7 @@ ul li button{
     font-size: 23px;
     
 }
-ul li a button{
-    background-color: rgb(144, 231, 231);
-}
+
 nav ul li button{
     display: inline;
     border-radius: 5px;
