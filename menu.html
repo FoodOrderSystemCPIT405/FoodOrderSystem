@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h2>Order Menu</h2>
+        </div>
+
+        <div class="navlinks">
+            <ul>
+                <li><a class="naveborder" href="index.html">Home</a></li>
+                <li><a class="naveborder" href="menu.html">Menu</a></li>
+                <li><a class="naveborder" href="login.html">Login</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Menu</h1>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div class="main">
+        <h2>Pizzas</h2>
+
+        <div class="food">
+            <img src="images/burger.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="1">Cheese Pizza</h3>
+            <br>
+            <h3 id="2">15</h3>
+            <br>
+            <button class="ordernow" onclick="orderNow(1,2)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pizza1.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="3">Neapolitan Pizza</h3>
+            <br>
+            <h3 id="4">49</h3>
+            <br>
+            <button class="ordernow" onclick="orderNow(3,4)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pizza2.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="5">Chicago Pizza</h3>
+            <br>
+            <h3 id="6">50</h3>
+            <br>
+            <button class="ordernow" onclick="orderNow(5,6)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pizza3.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="7">New York-Style Pizza</h3>
+            <br>
+            <h3 id="8">40</h3>
+            <br>
+            <button class="ordernow" onclick="orderNow(7,8)">Order Now</button>
+        </div>
+
+        <div class="loadmorepizza">
+            <img src="images/pizza5.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="9">Papa John's Pizza</h3>
+            <br>
+            <h3 id="10">50</h3>
+            <br>
+            <button class="ordernow" onclick="orderNow(9,10)">Order Now</button>
+        </div>
+        <div class="loadmorepizza">
+            <img src="images/combo2.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="11">Quick Tomato Pizzas</h3>
+            <br>
+            <h3 id="12">59</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(11,12)">Order Now</button>
+        </div>
+        <div class="loadmorepizza">
+            <img src="images/pizza6.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="13">Pizza Margherita</h3>
+            <br>
+            <h3 id="14">45</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(13,14)">Order Now</button>
+        </div>
+        <div class="loadmorepizza">
+            <img src="images/pizza7.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="15">Four Cheese Pizza</h3>
+            <br>
+            <h3 id="16">29</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(15,16)">Order Now</button>
+        </div>
+        <button id="loadmorepizzabtn" class="loadmorebtn" onClick="loadMorePizzas()">Load More</button>
+    </div>
+    <br>
+    <br>
+    <div class="main">
+        <h2>Burgers</h2>
+
+        <div class="food">
+            <img src="images/burger1.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="17">Potato Corn Burger</h3>
+            <br>
+            <h3 id="18">30</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(17,18)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/burger2.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="19">Supreme Veggie Burger</h3>
+            <br>
+            <h3 id="20">40</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(19,20)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/burger3.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="21">Pizza Burger</h3>
+            <br>
+            <h3 id="22">10</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(21,22)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/burger4.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="23">Rajma Patty Burger</h3>
+            <br>
+            <h3 id="24">25</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(23,24)">Order Now</button>
+        </div>
+        <div class="loadmoreburger">
+            <img src="images/burger5.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="25">Butter Chicken Burger</h3>
+            <br>
+            <h3 id="26">35</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(25,26)">Order Now</button>
+        </div>
+        <div class="loadmoreburger">
+            <img src="images/burger6.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="27">Stuffed Bean Burger</h3>
+            <br>
+            <h3 id="28">15</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(27,28)">Order Now</button>
+        </div>
+        <div class="loadmoreburger">
+            <img src="images/burger7.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="29">Lamb Burger</h3>
+            <br>
+            <h3 id="30">20</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(29,30)">Order Now</button>
+        </div>
+        <div class="loadmoreburger">
+            <img src="images/burger8.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="31">cheese Burger</h3>
+            <br>
+            <h3 id="32">45</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(31,32)">Order Now</button>
+        </div>
+
+        <button id="loadmoreburgerbtn" class="loadmorebtn" onClick="loadMoreBurgers()">Load More</button>
+    </div>
+    <br>
+    <br>
+    <div class="main">
+        <h2>Cold Drinks</h2>
+
+        <div class="food">
+            <img src="images/cock1.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="33">Coca Cola Can</h3>
+            <br>
+            <h3 id="34">5</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(33,34)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pepsi1.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="35">Pepsi 2L</h3>
+            <br>
+            <h3 id="36">10</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(35,36)">Order Now</button>
+        </div>
+
+        <div class="food">
+            <img src="images/pepsi2.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="37">Pepsi Can</h3>
+            <br>
+            <h3 id="38">5</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(37,38)">Order Now</button>
+        </div>
+
+        <div class="loadmoredrink">
+            <img src="images/dew1.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="39">Mountain Dew Can</h3>
+            <br>
+            <h3 id="40">5</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(39,40)">Order Now</button>
+        </div>
+        <div class="loadmoredrink">
+            <img src="images/dew2.jpg" width="150px" height="100px">
+            <br>
+            <h3 id="41">Mountain Dew 1.5L</h3>
+            <br>
+            <h3 id="42">9</h3>
+            <br>
+            <button class="ordernow"onclick="orderNow(41,42)">Order Now</button>
+        </div>
+
+
+        <button id="loadmoredrinkbtn" class="loadmorebtn" onClick="loadMoreDrinks()">Load More</button>
+    </div>
+
+
+    <div id="orderReview">
+        <h2>Order Review</h2>
+        <div id="orderItems"></div>
+        <p>Total: $<span id="orderTotal"></span></p>
+        <button id="placeOrderBtn" onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <h1> The italian house </h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="footer2">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="menu.html">Order Food</a></li>
+
+        </div>
+        <div class="footer3">
+            <h2>Our Pages</h2>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+        </div>
+
+        <div class="credit">
+            <p>Project CPIT-405</p>
+        </div>
+    </div>
+
+    <script>
+
+        function loadMorePizzas() {
+            var array1 = document.getElementsByClassName("loadmorepizza");
+            for (let i = 0; i < array1.length; i++) {
+                array1[i].style.cssText = 'border:1px solid green;display:inline-block;margin:25px 25px;padding:20px 20px;border-radius: 5px;text-align: center';
+            }
+            document.getElementById("loadmorepizzabtn").style.display = 'none';
+        }
+
+        function loadMoreBurgers() {
+            var array2 = document.getElementsByClassName("loadmoreburger");
+            for (let j = 0; j < array2.length; j++) {
+                array2[j].style.cssText = 'border:1px solid green;display:inline-block;margin:25px 25px;padding:20px 20px;border-radius: 5px;text-align: center';
+            }
+            document.getElementById("loadmoreburgerbtn").style.display = 'none';
+        }
+
+        function loadMoreDrinks() {
+            var array3 = document.getElementsByClassName("loadmoredrink");
+            for (let k = 0; k < array3.length; k++) {
+                array3[k].style.cssText = 'border:1px solid green;display:inline-block;margin:25px 25px;padding:20px 20px;border-radius: 5px;text-align: center';
+            }
+            document.getElementById("loadmoredrinkbtn").style.display = 'none';
+        }
+
+        function placeOrder() {
+
+            window.location = 'payment.html';
+
+        }
+        var ord = [];
+
+        function orderNow(nameID, priceID) {
+            var name = document.getElementById(nameID).innerText;
+            var price = document.getElementById(priceID).innerText;
+
+            ord.push({
+                name,
+                price
+            });
+            displayOrderItems();
+            // alert(JSON.stringify(ord));
+
+
+
+            // ord.forEach(function(ord){
+            //     var orderItemsContainer = document.getElementById("orderItems");
+            //     var total 
+            // })
+
+        }
+
+        // function orderNow(nameID, priceID, ord) {
+        //     var name = document.getElementById(nameID).innerText;
+        //     var price = document.getElementById(priceID).innerText;
+
+        //     alert(name +" "+ price);
+
+        // }
+
+
+        // var orderItems = [
+        //     { name: "Cheese Pizza", price: 10 },
+        //     { name: "Supreme Veggie Burger", price: 40 },
+        //     { name: "Mountain Dew Can", price: 5 },
+        //     { name: "dd", price: 5 },
+        //     { name: "CPIT405", price: 10 }
+        // ];
+
+        // Function to display order items in the review section
+        function displayOrderItems() {
+            var orderItemsContainer = document.getElementById("orderItems");
+            var total = 0;
+
+            orderItemsContainer.innerHTML = ""; // Clear the container before adding items
+
+            ord.forEach(function (item) {
+                var itemElement = document.createElement("div");
+                itemElement.innerHTML = item.name + "  " + item.price;
+                orderItemsContainer.appendChild(itemElement);
+                total += parseInt(item.price);
+            });
+
+            document.getElementById("orderTotal").textContent = total;
+        }
+
+
+
+
+        // Call the displayOrderItems function to populate the order review section
+        // displayOrderItems();
+    </script>
+</body>
+
+</html>
