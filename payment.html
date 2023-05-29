@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h2>Payment</h2>
+        </div>
+
+        <div class="navlinks">
+            <ul>
+                <li><a class="naveborder" href="index.html">Home</a></li>
+                <li><a class="naveborder" href="menu.html">Go Back</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+
+        <form action="index.html" onsubmit="purchase()">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Khalid Alharbi" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="optional">
+                    </div>
+
+
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="khalid alharbi" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="june" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2023" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="number" placeholder="123" required>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Pay"  class="submit-btn">
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+           <h1> The italian house </h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <div class="footer2">
+           <h2>Services</h2>
+           <ul>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="menu.html">Order Food</a></li>
+              
+        </div>
+        <div class="footer3">
+           <h2>Our Pages</h2>
+           <ul>
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+        </div>
+  
+        <div class="credit">
+           <p>Project CPIT-405</p>
+        </div>
+     </div>
+    <script>
+        function purchase() {
+            alert("Thank you for your purchase");
+        }
+
+    </script>
+</body>
+
+</html>
